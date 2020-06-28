@@ -1,0 +1,184 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TheBest Studios</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="TheBest Studios">
+	<meta name="keywords" content="music, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+ 
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'website/css/font-awesome.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'website/css/owl.carousel.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'website/css/slicknav.min.css' %}"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="{% static 'website/css/style.css' %}"/>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->    
+	<header class="header-section clearfix">
+		<a href="home.html" class="site-logo">
+			<img src="{% static 'website/img/logo.png' %}" alt="">
+		</a>
+		<div class="header-right">
+			<a href="#" class="hr-btn">Help</a>
+			<span>|</span>
+			<div class="user-panel">
+				<a href="" class="login">Login</a>
+				<a href="" class="register">Create an account</a>
+			</div> 
+		</div>
+		<ul class="main-menu">
+			<li><a href="{% url 'home' %}">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Pages</a>
+				<ul class="sub-menu">
+					<li><a href="{% url 'category' %}">Category</a></li>
+					<li><a href="{% url 'playlist' %}">Playlist</a></li>
+					<li><a href="{% url 'artist' %}">Artist</a></li>
+					<li><a href="{% url 'blog' %}">Blog</a></li>
+					<li><a href="{% url 'contact' %}">Contact</a></li>
+				</ul>
+			</li>
+			<li><a href="{% url 'blog' %}">News</a></li>
+			<li><a href="{% url 'contact' %}">Contact</a></li>
+		</ul>
+	</header>
+	<!-- Header section end -->
+
+	<!-- Blog section -->
+	<section class="blog-section spad">
+		<div class="container">
+			<!-- Blog post -->
+			<div class="blog-item">  
+				<img src="{% static 'website/img/blog/3.jpg' %}" alt="">
+				<div class="blog-date">june 14, 2018</div>
+				<h3>RED DSMC2 Brain</h3>
+				<div class="blog-meta">by red <a href="">Best 8k camera forvever</a> red <a href="">Champion for a reason</a></div>
+				<p> The camera BRAIN is the primary building block of the RED system, housing the image sensor and advanced computing components. A DSMC2® BRAIN is capable of data write speeds of 300 MB/s, can simultaneously record in REDCODE RAW and Apple ProRes or Avid DNxHR/HD, and is offered with four sensor options - delivering incredible dynamic range and up to 8K resolution. With features like cable-free peripherals, integrated media bay, wireless control, DSMC2 is the most powerful and intuitive camera to date. It is also compatible with a growing arsenal of modules and accessories—from RED and other Third-Party manufacturers. Tack on interchangeable OLPFs and lens mounts and DSMC2 gives you the ultimate control over your footage.</p>
+			</div>			
+
+			<!-- Blog post -->
+			<div class="blog-item">  
+				<img src="{% static 'website/img/blog/2.jpg' %}" alt="">
+				<div class="blog-date">Jan 14, 2020</div>
+				<h3>Camila Cabello Romance</h3>
+				<div class="blog-meta">by <a href="">Camila Cabello</a> in <a href="">Music</a></div>
+			    <p>Spotify announced this week that the most streamed track of 2019 was “Señorita”, the sweltering summer single from Camila Cabello and Shawn Mendes, an unbearably tactile real-life couple who have been anointed the Britney and JT of the Gen-Y set. For Cabello, alumni of the defunct girl group Fifth Harmony, it marked her second Latin-tinged smash after 2017’s “Havana”.<br>
+			    	<br>
+			    Do you dare to lose yourself in love?<br>
+				Have the butterflies in your stomach turned into roaring lions?<br>
+				If yes, then you know you've arrived.<br>
+				'Romance' is here. Listen now: https://CamilaCabello.lnk.to/Romance <br>
+				 </p>
+			</div>
+
+			<!-- Blog post -->
+			<div class="blog-item">      
+				<img src="{% static 'website/img/blog/1.jpg' %}" alt="">
+				<div class="blog-date">Feb 20, 2020</div>
+				<h3>Best way to shoOt</h3>
+				<div class="blog-meta">by <a href="">Virtual set</a> in <a href="">Movie shoOting</a></div>
+				<p>Virtual production is an emerging space and it involves realtime visual effects, live audio (3D), realtime character animation and realtime motion capture. With developments moving fast, the amount of post-production required to deliver final shots in realtime is reducing rapidly, month to month. <br>
+				In OSF film work, 60% of close and mid shots are good to go directly to the edit, with just 40% needing to be opened up in post and given a polish.<br> 
+				<br>
+			    OSF realtime virtual production system integrations are based on OSF Realtime Machines, running Unreal Engine with realtime rendering and virtual camera cinematic capabilities.<br>
+			    <br>
+		        Realtime camera tracking is taken care of by Mo-sys Engineering on top of  the optical camera (Alexa Mini). Blackmagic hardware also plays a large part in OSF solutions, incorporate 4K and 8K broadcast standards.</p>
+			</div>
+			
+			<div class="site-pagination">
+				<a href="#" class="active">01.</a>
+				<a href="#">02.</a>
+				<a href="#">03.</a>
+				<a href="#">04.</a>
+			</div>
+		</div>
+	</section>
+	<!-- Blog section end -->
+
+	<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6 col-lg-7 order-lg-2">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="footer-widget">
+								<h2>About us</h2>
+								<ul>
+									<li><a href="">Our Story</a></li>
+									<li><a href="">Our Blog</a></li>
+									<li><a href="">History</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="footer-widget">
+								<h2>Products</h2>
+								<ul>
+									<li><a href="">Movies</a></li>
+									<li><a href="">Subscription</a></li>
+									<li><a href="">Custom Music</a></li>
+									<li><a href="">Footage</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="footer-widget">
+								<h2>Playlists</h2>
+								<ul>
+									<li><a href="">Newsletter</a></li>
+									<li><a href="">Careers</a></li>
+									<li><a href="">Press</a></li>
+									<li><a href="">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-5 order-lg-1">
+					<img src="{% static 'website/img/logo.png' %}" alt="">
+				
+					<div class="social-links">
+						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><i class="fa fa-pinterest"></i></a>
+						<a href=""><i class="fa fa-facebook"></i></a>
+						<a href=""><i class="fa fa-twitter"></i></a>
+						<a href=""><i class="fa fa-youtube"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+	
+	<!--====== Javascripts & Jquery ======--> 
+	<script src="{% static 'website/js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'website/js/jquery.slicknav.min.js' %}"></script>
+	<script src="{% static 'website/js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'website/js/mixitup.min.js' %}"></script>
+	<script src="{% static 'website/js/main.js' %}"></script>
+
+	</body>
+</html>
